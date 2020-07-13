@@ -1,0 +1,359 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) and (max-width: 575px) 
+{
+	.navbar-brand {
+		width: 140px;
+	}
+	.d-sm-none{
+		display: none;
+	}
+	header nav .navbar-nav .nav-item .nav-link{
+		display: inline-block;
+	}
+	header nav .navbar-nav .nav-item .nav-link::after{
+		bottom: 5px;
+	}
+	header .banner .banner-text{
+		margin: 50px 0;
+	}
+	header .banner .banner-text h1{
+		font-size: 28px;
+	}
+	header .banner .banner-text ul li .common-btn {
+		margin-right: 10px;
+	}
+	header .banner .banner-text ul li .common-btn, .about .about-text .common-btn, .emergency .emergency-text .common-btn, .get-touch .get-form button {
+		padding: 10px 20px;
+		font-size: 14px;
+	}
+	header .banner .banner-text p {
+		margin-bottom: 30px;
+	}
+	.total-counter {
+		margin: 100px 0;
+	}
+	.total-counter .single-counter{
+		margin: 30px auto;
+	}
+	.about {
+		margin-bottom: 100px;
+		text-align: center;
+	}
+	.about .about-img {
+		margin-left: 0px;
+		margin-bottom: 30px;
+	}
+	.about .about-text h2, .symptom .hadding h2, .protect .hadding h2, .live-report .hadding h2, .specialist-section .hadding h2, .latest-blog .hadding h2, .question .hadding h2, .get-touch .haddig h2{
+		font-size: 26px;
+	}
+	.mb-sm-50{
+		margin-bottom: 50px;
+	}
+	.symptom .maine-symptom .single-sym-img-box-1 {
+		margin-bottom: 0px;
+	}
+	.symptom .maine-symptom .single-sym-img-box .sym-img span {
+		right: 132px;
+		top: 33px;
+		font-size: 22px;
+	}
+	.symptom .maine-symptom .single-sym-img-box-3 {
+		margin-top: 0px;
+	}
+	.symptom {
+		margin-bottom: 70px;
+	}
+	.emergency{
+		padding: 30px;
+		text-align: center;
+	}
+	.emergency .emergency-text h2 {
+		font-size: 30px;
+	}
+	.emergency .emergency-img {
+		display: none;
+	}
+	.emergency{
+		margin-bottom: 100px;
+	}
+	.protect .single-protect {
+		margin-bottom: 0px;
+		padding: 30px 50px;
+	}
+	.protect .hadding {
+		margin-bottom: 50px;
+	}
+	.live-report .live-report-box{
+		padding: 30px 10px;
+	}
+	.total-table-box {
+		display: none;
+	}
+	.specialist-section {
+		margin-bottom: 100px;
+	}
+	.latest-blog {
+		background-color: #f7f8fc;
+	}
+	.latest-blog .single-blog{
+		padding: 30px;
+		text-align: center;
+	}
+	.latest-blog .single-blog .blog-text h3{
+		font-size: 20px;
+	}
+	.latest-blog{
+		padding: 30px 0;
+	}
+	.latest-blog .hadding {
+		margin-bottom: 50px;
+	}
+	.latest-blog .single-blog .blog-text a{
+		display: block;
+	}
+	.question {
+		padding: 100px 0;
+	}
+	.question {
+		padding: 100px 0;
+		text-align: center;
+	}
+	.question .left-question .question-box ul li input{
+		margin-bottom: 30px;
+		width: 100%;
+	}
+	.question .left-question .question-box ul li button{
+		margin-left: 8px;
+		padding: 18px 20px;
+	}
+	.right-question {
+		margin-top: 30px;
+	}
+	.get-touch {
+		margin-bottom: 50px;
+	}
+	.get-contact {
+		margin-top: 50px;
+	}
+	.latest-blog .single-blog .blog-text ul{
+		justify-content: center;
+	}
+	footer{
+		text-align: center;
+	}
+	.footer-tow-section{
+		margin-top: 30px;
+	}
+	.footer-five-section {
+		margin-top: 50px;
+	}
+	footer ul li {
+		margin-bottom: 10px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) and (max-width: 767px) 
+{
+	header nav .navbar-nav .nav-item .nav-link{
+		display: inline-block;
+	}
+	header nav .navbar-nav .nav-item .nav-link::after{
+		bottom: 5px;
+	}
+	header .banner .banner-text{
+		margin: 100px 0;
+	}
+	header .banner .banner-text h1 {
+		font-size: 50px;
+	}
+	.about .about-img {
+		margin-left: 0px;
+	}
+	.about-text {
+		margin-top: 40px;
+		text-align: center;
+	}
+	.mb-sm-50{
+		margin-bottom: 50px;
+	}
+	.symptom .maine-symptom .single-sym-img-box-1 {
+		margin-bottom: 0px;
+	}
+	.symptom .maine-symptom .single-sym-img-box .sym-img span {
+		right: 28px;
+		top: 34px;
+		font-size: 22px;
+	}
+	.symptom .maine-symptom .single-sym-img-box-3 {
+		margin-top: 0px;
+	}
+	.symptom {
+		margin-bottom: 100px;
+	}
+	.emergency .emergency-text{
+		padding-top: 40px;
+	}
+	.emergency .emergency-img {
+		margin-top: -95px;
+		margin-left: 190px;
+	}
+	.emergency .emergency-img img{
+		height: 400px;
+	}
+	.protect .single-protect{
+		padding: 0 30px;
+	}
+	.total-table-box {
+		display: none;
+	}
+	.latest-blog .single-blog {
+		margin-bottom: 30px;
+		text-align: center;
+		padding: 30px;
+	}
+	.latest-blog .single-blog .blog-text a{
+		display: block;
+	}
+	.latest-blog .single-blog .blog-text ul {
+		justify-content: center;
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	.latest-blog .single-blog .blog-text h3 {
+		font-size: 28px;
+	}
+	.latest-blog{
+		padding: 100px 0;
+	}
+	.question {
+		padding: 100px 0;
+		text-align: center;
+	}
+	.question .left-question .question-box {
+		margin-bottom: 40px;
+	}
+	.get-touch {
+		margin-bottom: 100px;
+	}
+	.get-contact {
+		margin-top: 60px;
+	}
+	.footer-five-section {
+		text-align: center;
+		margin-top: 40px;
+	}
+	.footer-logo-section {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.footer-three-section,
+	.footer-four-section,
+	.footer-tow-section {
+		text-align: center;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) 
+{
+	header nav .navbar-nav .nav-item .nav-link{
+		display: inline-block;
+	}
+	header nav .navbar-nav .nav-item .nav-link::after{
+		bottom: 5px;
+	}
+	.total-counter .single-counter .single-counter-absulet h1 {
+		font-size: 36px;
+		font-weight: 700;
+		margin-bottom: 15px;
+	}
+	.symptom .maine-symptom .single-sym-img-box-1 {
+		margin-bottom: 30px;
+	}
+	.symptom .maine-symptom .single-sym-img-box .sym-img span {
+		right: 28px;
+		top: 34px;
+		font-size: 22px;
+	}
+	.symptom .maine-symptom .single-sym-img-box-3 {
+		margin-top: 30px;
+	}
+	.symptom .maine-symptom .single-sym-img-box .sym-img span{
+		right: 73px;
+	}
+	.mb-sm-50{
+		margin-bottom: 50px;
+	}
+	.emergency .emergency-text{
+		padding-top: 40px;
+	}
+	.emergency .emergency-img {
+		margin-top: -150px;
+		margin-left: 300px;
+	}
+	.emergency .emergency-img img{
+		height: 350px;
+	}
+	.symptom {
+		margin-bottom: 150px;
+	}
+	.single-protect{
+		padding:0 30px;
+	}
+	.total-table-box {
+		margin-top: 60px;
+	}
+	.latest-blog {
+		padding: 100px 0;
+	}
+	.question {
+		padding: 100px 0;
+		text-align: center;
+	}
+	.question-box ul{
+		justify-content: center;
+	}
+	.right-question {
+		margin-top: 40px;
+	}
+	footer{
+		text-align: center;
+	}
+	.footer-logo-section {
+		margin-bottom: 50px;
+	}
+	.footer-five-section {
+		margin-top: 50px;
+	}
+	header .banner .banner-text {
+		margin-top: 100px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) 
+{
+	header .banner .banner-text h1 {
+		font-size: 60px;
+	}
+	.symptom .maine-symptom .single-sym-img-box .sym-img span{
+		right: 12px;
+	}
+	.emergency .emergency-img {
+		margin-top: -95px;
+	}
+	.emergency .emergency-img img{
+		width: 100%;
+	}
+	.emergency .emergency-img {
+		margin-top: 0px;
+	}
+	.question .left-question .question-box ul li input {
+		width: 200px;
+	}
+	.live-report .live-report-box .total-report .single-report ul li img{
+		margin-right: 5px;
+	}
+
+}

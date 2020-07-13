@@ -1,0 +1,835 @@
+
+@import 'common';
+
+$one-color : #fea71a;
+$tow-color : #706ad4;
+
+%common-btn {
+	padding: 20px 40px;
+	display: inline-block;
+	background-color: $one-color;
+	border-radius: 10px;
+	font-weight: 500;
+	font-size: 18px;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+%common-hadding{
+	h3{
+		font-weight: 500;
+		font-size: 20px;
+		color: #01386e;
+		font-family: 'Roboto', sans-serif;
+	}
+	h2{
+		font-weight: 700;
+		font-size: 45px;
+		color: #706ad4;
+		margin-top: 30px;
+		font-family: 'Montserrat', sans-serif;
+	}
+}
+
+/*-- header-section start --*/
+header{
+	background-image: url(../images/Corona-header.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	nav{
+		.container{
+			border-bottom: 1px solid #e9e9e9;
+		}
+		.navbar-nav{
+			.nav-item{ 
+
+				margin-left: 22px;
+
+				.nav-link{
+					font-weight: 500;
+					font-size: 14px;
+					color: #01386e;
+					-webkit-transition: .4s;
+					-o-transition: .4s;
+					transition: .4s;
+					position: relative;
+					border: 2px solid transparent;
+
+					&::after{
+						background-color: $one-color;
+						height: 3px;
+						width: 0;
+						position: absolute;
+						content: "";
+						bottom: -22px;
+						left: 0;
+						opacity: 0;
+						-webkit-transition: .4s;
+						-o-transition: .4s;
+						transition: .4s;
+						visibility: hidden;
+					}
+					&:hover::after{
+						opacity: 1;
+						width: 100%;
+						visibility: visible;
+					}
+				}
+			}
+			.nav-item.active{
+				.nav-link{
+					color: $one-color;
+
+					&::after{
+						opacity: 1;
+						width: 100%;
+						visibility: visible;
+					}
+				}
+			}
+		}
+		button{
+			background-color: transparent;
+			margin-left: 50px;
+			padding: 13px 16px;
+			border-radius: 5px;
+			color: #fff;
+			background-color: $one-color;
+			background-image: url(../images/Corona-button.png);
+			background-size: cover;
+			background-position: center;
+			border: 0;
+			font-weight: 500;
+			font-size: 14px;
+		}
+	}/*-- nav-end --*/
+
+	.banner{
+
+		.banner-text{
+			margin-top: 150px;
+			margin-bottom: 100px;
+
+			h2{
+				font-weight: 500;
+				font-size: 25px;
+				color: #01386e;
+				margin-bottom: 25px;
+			}
+			h1{
+				font-size: 70px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 700;
+				color: $tow-color;
+				margin: 30px 0;
+			}
+			p{
+				line-height: 32px;
+				margin-bottom: 60px;
+			}
+			ul{
+				li{
+					.common-btn{
+						@extend %common-btn;
+						margin-right: 30px;
+
+					}
+					.btn-tow{
+						background-color: transparent;
+						border: 1px solid $one-color;
+						color: #01386e;
+					}
+				}
+			}
+		}
+
+	}/*-- banner-text-end --*/
+}
+/*-- header-section end --*/
+
+
+/*-- total-counter-section start --*/
+.total-counter{
+	margin-bottom: 120px;
+	margin-top: 150px;
+
+	.single-counter{
+		
+		border-radius: 25px;
+		width: 320px;
+		height: 179px;
+		margin-bottom: 30px;
+		position: relative;
+		background-color: rgb(254, 167, 26);
+		-webkit-box-shadow: 0px 1px 29px 0px rgba(0, 0, 0, 0.15);
+		box-shadow: 0px 1px 29px 0px rgba(0, 0, 0, 0.15);
+
+		.single-counter-absulet{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: -3px;
+			left: 0;
+			padding: 50px 0;
+			border-radius: 25px;
+			background-image: url(../images/Corona-ab-1.png);
+			background-color: rgb(255, 255, 255);
+			background-size: contain;
+
+			h1{
+				font-size: 40px;
+				font-weight: 700;
+				margin-bottom: 28px;
+			}
+			p{
+				font-size: 18px;
+				font-weight: 500;
+			}
+		}
+	}
+	.single-counter-2{
+		background-color: rgb(81, 145, 28);
+
+		.single-counter-absulet-2{
+			background-image: url(../images/Corona-ab-2.png);
+		}
+	}
+	.single-counter-3{
+		background-color: rgb(96, 87, 238);
+
+		.single-counter-absulet-3{
+			background-image: url(../images/Corona-ab-3.png);
+		}
+	}
+}
+/*-- total-counter-section end --*/
+
+
+
+
+/*-- about-section start --*/
+.about{
+	margin-bottom: 150px;
+	.about-img{
+		margin-left: -160px;
+	}
+	.about-text{
+		@extend %common-hadding;
+
+		.common-btn{
+			@extend %common-btn;
+			margin-top: 60px;
+		}
+	}
+}
+/*-- about-section end --*/
+
+
+
+/*-- symptom-section start --*/
+.symptom{
+	margin-bottom: 230px;
+	.hadding{
+		@extend %common-hadding;
+		text-align: center;
+		margin-bottom: 100px;
+	}
+	.maine-symptom{
+		.single-sym-img-box{
+			h4{
+				margin-top: 30px;
+				font-size: 24px;
+				font-weight: 500;
+				color: #333;
+				font-family: 'Montserrat', sans-serif;
+			}
+			.sym-img{
+				position: relative;
+
+				span{
+					position: absolute;
+					right: 34px;
+					top: 30px;
+					font-size: 26px;
+					font-weight: 700;
+					color: #fff;
+					font-family: 'Montserrat', sans-serif;
+					-webkit-animation: zoom 1s linear infinite;
+					animation: zoom 1s linear infinite;
+					-webkit-animation-timing-function: ease-in-out;
+					animation-timing-function: ease-in-out;
+				}
+				@-webkit-keyframes zoom{
+					0%{
+						-webkit-transform: scale(1);
+						transform: scale(1); 
+					}
+					50%{
+						-webkit-transform: scale(1.1);
+						transform: scale(1.1); 
+					}
+					100%{
+						-webkit-transform: scale(1.2);
+						transform: scale(1.2); 
+					}
+				}
+				@keyframes zoom{
+					0%{
+						-webkit-transform: scale(1);
+						transform: scale(1); 
+					}
+					50%{
+						-webkit-transform: scale(1.1);
+						transform: scale(1.1); 
+					}
+					100%{
+						-webkit-transform: scale(1.2);
+						transform: scale(1.2); 
+					}
+				}
+			}
+		}
+
+		.single-sym-img-box-1{
+			margin-bottom: -45px;
+		}
+		.single-sym-img-box-3{
+			margin-top: -15px;
+		}
+	}
+}
+/*-- symptom-section end --*/
+
+
+/*-- emergency-section start --*/
+.emergency{
+	background-image: url(../images/Corona-emergency-bg.png);
+	background-size: cover;
+	background-position: center;
+	width: 95%;
+	border-radius: 40px;
+	margin: 0 auto;
+	margin-bottom: 150px;
+
+	.emergency-text{
+		color: #fff;
+		h2{
+			font-size: 45px;
+			font-weight: 700;
+			margin-bottom: 30px;
+		}
+		p{
+			margin-bottom: 50px;
+			color: #fff;
+		}
+		.common-btn{
+			color: #fff;
+			@extend %common-btn;
+		}
+	}
+	.emergency-img{
+		margin-top: -95px;
+	}
+
+}
+
+/*-- emergency-section end --*/
+
+
+/*-- protect-section start --*/
+.protect{
+	margin-bottom: 50px;
+
+	.hadding{
+		@extend %common-hadding;
+		margin-bottom: 100px;
+	}
+	.single-protect{
+		margin-bottom: 100px;
+
+		h4{
+			margin: 30px 0;
+			font-size: 20px;
+		}
+		p{
+			font-size: 12px;
+		}
+	}
+}
+/*-- protect-section edn --*/
+
+
+/*-- live-report-start --*/
+.live-report{
+	margin-bottom: 150px;
+
+	.hadding{
+		@extend %common-hadding;
+		margin-bottom: 100px;
+	}
+	.live-report-box{
+		border-radius: 30px;
+		background-color: #f8f8fe;
+		width: 80%;
+		padding: 70px;
+		margin: 0 auto;
+
+		.total-report{
+			.single-report{
+				ul{ 
+					position: relative;
+					margin-bottom: 50px;
+
+					&::after{
+						position: absolute;
+						content: "";
+						height: 100%;
+						width: 6px;
+						right: 0;
+						top: 0;
+						background-color: #e86d79;
+					}
+					li{
+						img{
+							margin-right: 40px;
+							-webkit-animation: round 3s linear infinite;
+							animation: round 3s linear infinite;
+						}
+						@-webkit-keyframes round{
+							100%{
+								-webkit-transform: rotate(360deg);
+								transform: rotate(360deg);
+							}
+						}
+						@keyframes round{
+							100%{
+								-webkit-transform: rotate(360deg);
+								transform: rotate(360deg);
+							}
+						}
+						p{
+							font-size: 18px;
+							margin-bottom: 10px;
+						}
+						h2{
+							font-size: 40px;
+							font-weight: 700;
+						}
+					}
+				}
+			}
+
+			.single-report-2{
+				ul{
+					&:after{
+						background-color: #6aa03e;
+					}
+				}
+			}
+			.single-report-3{
+				ul{
+					&:after{
+						background-color: #b00d09;
+					}
+				}
+			}
+			.single-report-4{
+				ul{
+					margin-bottom: 0;
+
+					&:after{
+						background-color: #f79737;
+					}
+				}
+			}
+
+		}
+		.total-table-box{
+			input{
+				margin-bottom: 30px;
+				padding: 20px;
+				background-color: #eff2f9;
+				border: 0;
+			}
+			.report-box-table{
+				height: 470px;
+				width: 100%;
+				overflow-x: hidden;
+
+				table{
+					tr{
+						th{}
+						td{
+							color: #666666;
+							font-weight: 300;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/*-- live-report-end --*/
+
+
+
+/*-- specialist-section start --*/
+.specialist-section{
+
+	margin-bottom: 150px;
+
+	.hadding{
+		@extend %common-hadding;
+		margin-bottom: 100px;
+	}
+	.single-specialist{
+
+		.specialist-text{
+			width: 80%;
+			margin: 0 auto;
+			padding: 30px 0;
+			position: relative;
+			-webkit-transition: .4s;
+			-o-transition: .4s;
+			transition: .4s;
+			-webkit-transform: translateY(-50px);
+			-ms-transform: translateY(-50px);
+			transform: translateY(-50px);
+			background-color: rgb(255, 255, 255);
+			-webkit-box-shadow: 0px 1px 4.6px 0.4px rgba(0, 0, 0, 0.11);
+			box-shadow: 0px 1px 4.6px 0.4px rgba(0, 0, 0, 0.11);
+
+			&::after{
+				position: absolute;
+				content: "";
+				height: 5px;
+				width: 100%;
+				left: 0;
+				bottom: -5px;
+				-webkit-transition: .4s;
+				-o-transition: .4s;
+				transition: .4s;
+				visibility: visible;
+				background-color: #212529;
+			}
+			
+			&::before{
+				position: absolute;
+				content: "";
+				height: 5px;
+				width: 0;
+				right: 0;
+				bottom: -5px;
+				-webkit-transition: .4s;
+				-o-transition: .4s;
+				transition: .4s;
+				visibility: hidden;
+				background-color: $one-color;
+			}
+			
+
+			h4{
+				font-size: 22px;
+				font-weight: 500;
+			}
+			p{
+				margin-top: 10px;
+				margin-bottom: 15px;
+			}
+			a{
+				color: #212529;
+				margin: 0 5px;
+				-webkit-transition: .4s;
+				-o-transition: .4s;
+				transition: .4s;
+
+				&:hover{
+					color: $one-color;
+				}
+			}
+		}
+		&:hover .specialist-text{
+			-webkit-transform: translateY(-60px);
+			-ms-transform: translateY(-60px);
+			transform: translateY(-60px);
+		}
+		&:hover .specialist-text::after{
+			width: 0;
+			visibility: hidden;
+		}
+		&:hover .specialist-text::before{
+			width: 100%;
+			visibility: visible;
+		}
+	}
+}
+/*-- specialist-section end --*/
+
+
+
+/*-- latest-blog-section start --*/
+.latest-blog{
+	padding: 150px 0;
+	background-color: #f7f8fc;
+
+	.hadding{
+		margin-bottom: 100px;
+		@extend %common-hadding;
+	}
+	.single-blog{
+		margin-bottom: 30px;
+
+		.blog-text{
+			ul{
+				margin: 25px 0;
+
+				li{
+					font-size: 12px;
+					font-weight: 300;
+
+					i{
+						margin-right: 10px;
+						display: inline-block;
+					}
+				}
+			}
+			h3{
+				font-size: 24px;
+				font-weight: 500;
+				margin-bottom: 18px;
+			}
+			p{
+				margin-bottom: 30px;
+			}
+			a{
+				display: inline-block;
+				color: $one-color;
+				font-size: 18px;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+
+				i{
+					-webkit-transform: translateX(8px);
+					-ms-transform: translateX(8px);
+					transform: translateX(8px);
+					-webkit-transition: .4s;
+					-o-transition: .4s;
+					transition: .4s;
+					-webkit-animation: long-arow 1s linear infinite;
+					animation: long-arow 1s linear infinite;
+				}
+				@-webkit-keyframes long-arow{
+					100%{
+						-webkit-transform: translateX(11px);
+						transform: translateX(11px);
+					}
+				}
+				@keyframes long-arow{
+					100%{
+						-webkit-transform: translateX(11px);
+						transform: translateX(11px);
+					}
+				}
+			}
+		}
+	}
+}
+/*-- latest-blog-section end --*/
+
+
+/*-- question-section start --*/
+.question{
+	padding: 150px 0;
+
+	.hadding{
+		@extend %common-hadding;
+		margin-bottom: 100px;
+	}
+	.single-question-text{
+		h5{
+			font-size: 20px;
+			font-weight: 500;
+			margin-bottom: 28px;
+		}
+	}
+	.left-question{
+		.single-question-text{
+			margin-bottom: 50px;
+		}
+		.question-box{
+			background-color: #f7f8fc;
+			padding: 40px 30px;
+
+			h5{
+				font-size: 22px;
+				font-weight: 500;
+				margin-bottom: 30px;
+			}
+			p{
+				margin-bottom: 45px;
+			}
+			ul{
+				li{
+					input{
+						width: 280px;
+						padding: 20px;
+						border: 0;
+						border-radius: 10px;
+					}
+					button{
+						margin-left: 30px;
+						border-radius: 10px;
+						background-color: $one-color;
+						color: #fff;
+						border: 0;
+						padding: 20px 25px;
+
+					}
+				}
+			}
+		}
+	}
+	.right-question{
+		.single-question-text{
+			margin-bottom: 60px;
+		}
+	}
+}
+/*-- question-section end --*/
+
+
+
+/*-- get-touch start --*/
+.get-touch{
+	margin-bottom: 150px;
+
+	.haddig{
+		margin-bottom: 98px;
+		@extend %common-hadding;
+	}
+	.get-form{
+		input{
+			padding: 26px;
+			margin-bottom: 30px;
+			border-radius: 28px;
+		}
+		textarea{
+			margin-bottom: 30px;
+			border-radius: 28px;
+			resize: none !important;
+			height: 170px;
+			padding: 26px;
+		}
+		button{
+			@extend %common-btn;
+			border: 0;
+		}
+	}
+	.get-contact{
+
+		ul{
+			margin-bottom: 50px;
+
+			li{
+				a{
+					font-size: 40px;
+					color: $one-color;
+					margin-right: 30px;
+				}
+				h3{
+					font-size: 22px;
+					font-weight: 500;
+					margin-bottom: 28px;
+				}
+			}
+		}
+	}
+}
+/*-- get-touch end --*/
+
+
+/*-- footer-section start --*/
+footer{
+	background-color: #6c69b0;
+	padding-top: 100px;
+	font-size: 14px;
+
+	.pb-100{
+		padding-bottom: 100px;
+	}
+
+	.footer-logo-section{
+		img{
+			margin-bottom: 30px;
+		}
+		p{
+			color: #fff;
+		}
+	}
+	
+	ul{
+		li{
+			margin-bottom: 22px;
+			-webkit-transition: .4s;
+			-o-transition: .4s;
+			transition: .4s;
+
+			&:hover{
+				-webkit-transform: translateX(10px);
+				-ms-transform: translateX(10px);
+				transform: translateX(10px); 
+			}
+
+			a{
+				color: #fff;
+				-webkit-transition: .4s;
+				-o-transition: .4s;
+				transition: .4s;
+
+				&:hover{
+					color: #fff; 
+				}
+			}
+		}
+	}
+	.footer-five-section{
+		h6{
+			margin-bottom: 20px;
+			color: #fff;
+			font-size: 18px;
+		}
+		a{
+			margin-right: 15px;
+			display: inline-block;
+			color: #fff;
+			-webkit-transition: .4s;
+			-o-transition: .4s;
+			transition: .4s;
+
+			&:hover{
+				color: $one-color;
+			}
+
+		}
+		.active{
+			color: $one-color;
+		}
+	}
+	.footer-bottom{
+		padding: 25px 0;
+		background-color: #5a56af;
+		border-radius: 20px 20px 0 0;
+
+		p{
+			color: #fff;
+			font-weight: 500;
+		}
+	}
+}
+/*-- footer-section edn --*/
